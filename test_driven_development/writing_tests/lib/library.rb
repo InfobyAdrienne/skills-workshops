@@ -8,6 +8,10 @@ class Library
     ]
   end
 
+  def books
+    @books
+  end 
+
   def find_book(title)
     @books.find { |book| book[:title] == title }
   end
