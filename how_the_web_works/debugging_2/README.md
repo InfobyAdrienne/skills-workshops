@@ -1,12 +1,14 @@
 Error 1 
-app.rb was looking for a website with the url extension address "/", which was not being found. By looking in the correct file I found that the file was being incorrectly named as "/emoji"
+app.rb was looking for a website with the url extension address "/", which was not being found. By looking in the correct file I found that the file was being incorrectly named as "/emoji" and renamed it. 
 
 Error 2
-random_happy_emoji.rb was trying to load the page correctly and get the status code 200. However the status code it was getting was 500 because there was a .erb file which didn't exist 
+random_happy_emoji.rb was trying to load the page correctly and get the status code 200. However the status code it was getting was 500 because within index.erb it was calling a ruby method that didn;t exist. I removed this to get the page working correctly and returning the status cade 200. 
 
 Error 3
+The app.rb was using a 'get' instead of a 'post' which was then changed. It was also calling the params :the_struggle when it should have just been called :struggle.
 
-
+Error 4 
+It wanted a random happy emoji to appear on the "/" page. I therefore had to call the @emoji method. However, at the moment this shows either :) or :D but the test in ./spec/features/random_happy_emoji_spec.rb:14 is only testing for :). also, RSpec seems to be passing everytime. 
 
 # Debugging 2
 

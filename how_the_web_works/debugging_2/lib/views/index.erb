@@ -1,4 +1,11 @@
+<%= @emoji %>
+
+<! -- At the moment this shows either :) or :D but the test in ./spec/features/random_happy_emoji_spec.rb:14 is only testing for :). 
+
+Do I need to change  the test? -->
+
+
 <form action="/flipped_struggle" method="post">
-  Struggle: <input type="text" name="struggle" />
+  Struggle: <input type="text" name="struggle"/>
   <input type="submit" value="Flip table">
 </form>
