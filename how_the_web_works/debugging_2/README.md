@@ -1,3 +1,13 @@
+Error 1 
+app.rb was looking for a website with the url extension address "/", which was not being found. By looking in the correct file I found that the file was being incorrectly named as "/emoji"
+
+Error 2
+random_happy_emoji.rb was trying to load the page correctly and get the status code 200. However the status code it was getting was 500 because there was a .erb file which didn't exist 
+
+Error 3
+
+
+
 # Debugging 2
 
 Tightening the loop and getting visibility (on the web).
